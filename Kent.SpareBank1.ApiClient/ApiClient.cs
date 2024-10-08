@@ -25,19 +25,10 @@ public class ApiClient(ApiClientSettings settings)
         var httpClient = new HttpClient(); 
         var response = await httpClient.SendAsync(request);
         
-        // validation 
+        // validation & serialize
         try
         {
             response.EnsureSuccessStatusCode();
-        }
-        catch (Exception ex)
-        {
-            return new ApiClientResult<ApiAccessToken> { IsSuccess = false, ErrorMessage = ex.Message };
-        } 
-        
-        try 
-        {
-            // serialize the response to an OAuthAccessToken object
             var accessToken = await response.Content.ReadFromJsonAsync<ApiAccessToken>();
             
             if (accessToken is null)
@@ -46,11 +37,10 @@ public class ApiClient(ApiClientSettings settings)
             }
             
             return new ApiClientResult<ApiAccessToken> { IsSuccess = true, Value = accessToken };
-            
         }
         catch (Exception ex)
         {
             return new ApiClientResult<ApiAccessToken> { IsSuccess = false, ErrorMessage = ex.Message };
-        }
+        } 
     }
 }

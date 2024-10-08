@@ -9,7 +9,8 @@ using Microsoft.Extensions.Configuration;
 var currentDirectory = Directory.GetCurrentDirectory();
 Console.WriteLine($"Current directory: {currentDirectory}");
 
-const string pathToEnvFile = "/home/kent/repos/Kent.SpareBank1.ApiClient/.env";
+// const string pathToEnvFile = "/home/kent/repos/Kent.SpareBank1.ApiClient/.env";
+const string pathToEnvFile = "../../../../.env";
 DotNetEnv.Env.Load(pathToEnvFile);
 
 var builder = new ConfigurationBuilder()
@@ -50,5 +51,9 @@ if (result.IsSuccess)
     Console.WriteLine($"Token type: {result.Value.TokenType}");
     Console.WriteLine($"Expires in: {result.Value.ExpiresIn}");
     Console.WriteLine($"Refresh token: {result.Value.RefreshToken}");
+}
+else
+{
+    Console.WriteLine($"Error: {result.ErrorMessage}");
 }
 
