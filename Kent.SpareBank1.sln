@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kent.SpareBank1.ApiClient", "Kent.SpareBank1.ApiClient\Kent.SpareBank1.ApiClient.csproj", "{1459428E-C814-4960-A651-1DF789DF49FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kent.SpareBank1.ApiClient.Tests", "Kent.SpareBank1.ApiClient.Tests\Kent.SpareBank1.ApiClient.Tests.csproj", "{478A3C4F-6955-43D1-9CF4-110DB79EFD8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kent.SpareBank1.ApiClient.ConsoleUI", "Kent.SpareBank1.ApiClient.ConsoleUI\Kent.SpareBank1.ApiClient.ConsoleUI.csproj", "{E110B88D-7211-4BAD-B2F4-23B13FAE4C07}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{A4183398-C9DF-408F-A492-A9DD5BAA501F}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.env = .env
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1459428E-C814-4960-A651-1DF789DF49FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1459428E-C814-4960-A651-1DF789DF49FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1459428E-C814-4960-A651-1DF789DF49FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1459428E-C814-4960-A651-1DF789DF49FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{478A3C4F-6955-43D1-9CF4-110DB79EFD8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{478A3C4F-6955-43D1-9CF4-110DB79EFD8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{478A3C4F-6955-43D1-9CF4-110DB79EFD8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{478A3C4F-6955-43D1-9CF4-110DB79EFD8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E110B88D-7211-4BAD-B2F4-23B13FAE4C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E110B88D-7211-4BAD-B2F4-23B13FAE4C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E110B88D-7211-4BAD-B2F4-23B13FAE4C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E110B88D-7211-4BAD-B2F4-23B13FAE4C07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
